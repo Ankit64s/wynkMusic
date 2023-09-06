@@ -20,92 +20,49 @@
 <body background-color: #0C0F12;>
 
     <!-- header start -->
-    <nav class="B-header">
-        <!-- 1st navbar -->
-            <div class="Bupper-nav">
-                <div class="Blogo">
-                    <a href="#"><img src="https://asset.brandfetch.io/idhXjxLF9g/idxvsamq5q.png?updated=1674455441748" alt="icon" class="img"></a>
-                    <h3>Wynk Music
-                    </h3>
-                </div>
-                <div class="Bnav-content">
-                    <div class="input">
-                        <i class="fa-solid fa-magnifying-glass " style="color: rgb(176,176,184); border-left: 2px; padding-left: 1rem;margin-right: 0;padding-right: 1rem; font-size: larger; background-color:rgb(37,37,37);"></i>
-                        <input type="search" placeholder="Search Songs">
-                    </div>
-                    <div class="B-Manage">
-                        <div class="rupee">
-                            <i class="fa-solid fa-indian-rupee-sign" style="color: rgb(233,233,233); border-bottom:solid 2px 9e9d9d; border-radius: 10%; font-size:xx-small;"></i>
-                        </div>
-                        
-                        <h4>Manage Subscription</h4>
-                    </div>
-                    <div class="login">
-                        <div>
-                        <i class="fa-regular fa-user" style="color: rgb(253,253,253); padding-right: 0.5rem;"></i>
-                        Login
-                        </div>
-                        <i class="fa-solid fa-bars icon" style="color: rgb(255,255,255); font-size: 1.5rem; margin-left: 0.7rem;"></i>
-                    </div>
-                </div>
-               
+    <div style="background-color: #1C1B1B;">
+        <div class="flex justify-between h-14 items-center max-[768px]:p-3 max-[1024px]:p-3 px-24 py-10 top-0 z-10">
+            <div class="flex justify-start items-center">
+                <img class="rounded-full w-12 mr-2" src="https://asset.brandfetch.io/idhXjxLF9g/idxvsamq5q.png?updated=1674455441748">
+                <h1 class="text-white text-xl font-sans max-[768px]:text-sm inline">Wynk Music</h1>
             </div>
-        <!-- 2nd navbar -->
-            <div class="Blower-nav">
-                <div class="Bmenu">
-                    <div class="Blist">
-                        <a href="#" class="Bhome">
-                            All
-                        </a>
+            <div class="flex items-center justify-center gap-4 h-full">
+                <div class="bg-transparent border rounded-full border-gray-600 px-7 py-2 max-[640px]:hidden">
+                    <div class="flex px-2 max-[768px]:px-1 max-[640px]:hidden">
+                        <i class="fa-solid fa-magnifying-glass text-gray-600 text-lg max-[640px]:hidden"></i>
+                        <input type="text" placeholder="Search Songs" class="bg-transparent px-3 outline-none max-[640px]:hidden">
                     </div>
-                    <div class="Blist">
-                        <a href="#">
-                            Trending Now
-                        </a>
-                    </div>
-                    <div class="Blist">
-                        <a href="#">
-                            Old Songs
-                        </a>
-                    </div>
-                    <div class="Blist">
-                        <a href="newSong.html">
-                            New Songs
-                        </a>
-                    </div>
-                    <div class="Blistt">
-                        <a href="#">
-                            Moods & Genre
-                            <i class="fa-solid fa-angle-down" style="color: #bfbfc0;"></i>
-                        </a>
-                    </div>
-                    <div class="Blist">
-                        <a href="#">
-                            Top Albums
-                        </a>
-                        <i class="fa-solid fa-angle-down" style="color: #bfbfc0;"></i>
-                    </div>
-                    <div class="Blist">
-                        <a href="#">
-                            Top Artists
-                        </a>
-                    </div>
-                    <div class="Blist">
-                        <a href="#">
-                            Top Playlists
-                        </a>
-                        <i class="fa-solid fa-angle-down" style="color: #bfbfc0;"></i>
-                    </div>
-                    <div class="Blist">
-                        <a href="#">
-                            Podcast
-                        </a>
-                    </div>
-      
                 </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign text-white border text-xs p-1 rounded max-[640px]:hidden"></i>
+                </div>
+                <div><p class="text-white font-normal max-[640px]:hidden">Manage Subscription</p></div>
+                <div><p class="text-gray-600 text-4xl max-[768px]:hidden">|</p></div>
+                <div><i class="fa-regular fa-user text-white text-lg max-[768px]:hidden"></i></div>
+                <div><p class="text-white max-[768px]:hidden">Login</p></div>
+                <div><i class="fa-solid fa-bars text-white text-lg"></i></div>
             </div>
-      
-        </nav>
+        </div>
+
+        <div style="background-color: #0c0f12" class="flex items-center px-24 py-5 gap-8 overflow-x-auto max-[768px]:px-3 max-[1024px]:px-3">
+            <h3 class="text-gray-400 hover:underline cursor-pointer"><a href="">All</a></h3>
+            <h3 class="text-gray-400 hover:underline cursor-pointer"><a href="">Trending Now</a></h3>
+            <h3 class="text-gray-400 hover:underline cursor-pointer"><a href="index.html">Old Songs</a></h3>
+            <h3 class="text-gray-400 hover:underline cursor-pointer"><a href="newSong.html">New Songs</a></h3>
+            <select class="bg-transparent text-gray-400 hover:underline cursor-pointer">
+                <option>Party Songs</option>
+            </select>
+            <select class="bg-transparent hover:underline cursor-pointer text-gray-400">
+                <option><a href="">Top Albums</a></option>
+                <option><a href="">Top Hindi Albums</a></option>
+            </select>
+            <h3 class="text-gray-400 hover:underline cursor-pointer"><a href="">Top Artists</a></h3>
+            <select class="bg-transparent hover:underline cursor-pointer text-gray-400">
+                <option><a href="">Top Playlists</a></option>
+            </select>
+            <h3 class="text-gray-400 hover:underline cursor-pointer"><a href="">Podcast</a></h3>
+        </div>
+    </div>
       
     <!-- header end -->
     <!-- Songs start -->
